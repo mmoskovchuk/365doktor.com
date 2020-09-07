@@ -342,7 +342,7 @@
             endif;
             ?>
         </div>
-
+        
         <!--<div class="categories">
             <a href="/pl/zaburzenie-erekcji/" class="categories__item">
                 <img src="<?php /*bloginfo('template_url'); */?>/img/erect-disf.svg" class="categories__item-icon">
