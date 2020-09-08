@@ -87,9 +87,80 @@
                     <?php the_field('main_content'); ?>
                 </div>
             </div>
-            <?php if (is_active_sidebar('sidebar_treatment_page')) : ?>
 
-                <?php dynamic_sidebar('sidebar_treatment_page'); ?>
+            <?php if ($my_lang == 'en') : ?>
+
+                <?php
+                // Check rows exists.
+                if (have_rows('sidebar_treatment_page_tpl')): ?>
+                    <aside class="with-sidebar__aside">
+                    <?php  // Loop through rows.  ?>
+                    <?php while (have_rows('sidebar_treatment_page_tpl')) : the_row(); ?>
+                    <div class="with-sidebar__aside-item">
+                                <?php
+                                $image = get_sub_field('sidebar_img');
+                                if( !empty( $image ) ): ?>
+                                    <img src="<?php echo esc_url($image); ?>" />
+                                <?php endif; ?>
+                                <p><b>Medication:</b> <?php the_sub_field('medication') ?></p>
+                                <p><b>Active ingredient:</b> <?php the_sub_field('active_ingredient') ?></p>
+                                <p><b>How it works:</b> <?php the_sub_field('how_it_works') ?></p>
+                                <p><b>Advantages and disadvantages:</b> <?php the_sub_field('advantages_and_disadvantages') ?></p>
+                            </a>
+                    </div>
+                    <?php endwhile ?>
+                    </aside>
+                <?php endif; ?>
+
+            <?php elseif ($my_lang == 'de') : ?>
+
+                <?php
+                // Check rows exists.
+                if (have_rows('sidebar_treatment_page_tpl')): ?>
+                    <aside class="with-sidebar__aside">
+                    <?php  // Loop through rows.  ?>
+                    <?php while (have_rows('sidebar_treatment_page_tpl')) : the_row(); ?>
+                            <div class="with-sidebar__aside-item">
+                                <?php
+                                $image = get_sub_field('sidebar_img');
+                                if( !empty( $image ) ): ?>
+                                    <img src="<?php echo esc_url($image); ?>" />
+                                <?php endif; ?>
+                                <p><b>Medikament:</b> <?php the_sub_field('medication') ?></p>
+                                <p><b>Wirkstoff:</b> <?php the_sub_field('active_ingredient') ?></p>
+                                <p><b>Wie es funktioniert:</b> <?php the_sub_field('how_it_works') ?></p>
+                                <p><b>Vorteile und Nachteile:</b> <?php the_sub_field('advantages_and_disadvantages') ?></p>
+                                </a>
+                            </div>
+                    <?php endwhile ?>
+                    </aside>
+                <?php endif; ?>
+
+            <?php elseif ($my_lang == 'pl') : ?>
+
+
+                    <?php
+                    // Check rows exists.
+                    if (have_rows('sidebar_treatment_page_tpl')): ?>
+                        <aside class="with-sidebar__aside">
+                       <?php  // Loop through rows.  ?>
+                       <?php while (have_rows('sidebar_treatment_page_tpl')) : the_row(); ?>
+                            <div class="with-sidebar__aside-item">
+                                <?php
+                                $image = get_sub_field('sidebar_img');
+                                if( !empty( $image ) ): ?>
+                                    <img src="<?php echo esc_url($image); ?>" />
+                                <?php endif; ?>
+                                <p><b>Lek:</b> <?php the_sub_field('medication') ?></p>
+                                <p><b>Składnik czynny:</b> <?php the_sub_field('active_ingredient') ?></p>
+                                <p><b>Jak to działa:</b> <?php the_sub_field('how_it_works') ?></p>
+                                <p><b>Zalety i wady:</b> <?php the_sub_field('advantages_and_disadvantages') ?></p>
+                                </a>
+                            </div>
+                        <?php endwhile ?>
+                        </aside>
+                    <?php endif; ?>
+
 
             <?php endif; ?>
         </div>
