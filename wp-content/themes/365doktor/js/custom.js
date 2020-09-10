@@ -43,6 +43,7 @@ lang_m = lang.split('-')[0];
 console.log(lang_m);
 $('.header__lang_title').text(lang_m);
 
+
 $('.btn_form').on('click', function () {
     document.getElementsByClassName('contact-modal__wrap')[0].style.display = 'flex';
 });
