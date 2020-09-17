@@ -42,6 +42,18 @@ $additional_body_class = 'page-' . $current_page;
             <a href="/pl/" class="header__logo">
                 <img src="<?php bloginfo('template_url'); ?>/img/logo.svg">
             </a>
+        <?php elseif ($my_lang == 'sv') : ?>
+            <a href="/sv/" class="header__logo">
+                <img src="<?php bloginfo('template_url'); ?>/img/logo.svg">
+            </a>
+        <?php elseif ($my_lang == 'da') : ?>
+            <a href="/da/" class="header__logo">
+                <img src="<?php bloginfo('template_url'); ?>/img/logo.svg">
+            </a>
+        <?php elseif ($my_lang == 'pt') : ?>
+            <a href="/pt/" class="header__logo">
+                <img src="<?php bloginfo('template_url'); ?>/img/logo.svg">
+            </a>
         <?php endif; ?>
         <nav class="header__menu-wrap" id="nav">
             <?php

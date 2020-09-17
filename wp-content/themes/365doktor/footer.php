@@ -1352,19 +1352,19 @@
 
             <h2 class="contact-modal__title">Kontakta oss</h2>
             <p class="contact-modal__text">Lämna dina kontaktuppgifter så meddelar vi dig när vi går live</p>
-            <?php echo do_shortcode('[contact-form-7 id="147" title="contact form EN" html_class="contact-modal__form"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="1026" title="contact form SV" html_class="contact-modal__form"]'); ?>
 
         <?php elseif ($my_lang == 'da') : ?>
 
             <h2 class="contact-modal__title">Kontakt os</h2>
             <p class="contact-modal__text">Efterlad dine kontaktoplysninger, så informerer vi dig, når vi går live</p>
-            <?php echo do_shortcode('[contact-form-7 id="147" title="contact form EN" html_class="contact-modal__form"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="1029" title="contact form DA" html_class="contact-modal__form"]'); ?>
 
         <?php elseif ($my_lang == 'pt') : ?>
 
             <h2 class="contact-modal__title">Contate-Nos</h2>
             <p class="contact-modal__text">Por favor, deixe seus dados de contato e iremos informá-lo assim que entrarmos ao vivo</p>
-            <?php echo do_shortcode('[contact-form-7 id="147" title="contact form EN" html_class="contact-modal__form"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="1030" title="contact form PT" html_class="contact-modal__form"]'); ?>
 
         <?php endif; ?>
 

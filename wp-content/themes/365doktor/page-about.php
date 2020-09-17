@@ -210,6 +210,150 @@
             <img src="<?php bloginfo('template_url'); ?>/img/telemedicine3.png">
         </div>
     </div>
+<?php elseif ($my_lang == 'sv') : ?>
+    <div class="container cta__back about">
+        <div class="cta">
+            <div class="cta__text">
+                <h1>Få on-demand online-recept <br>Utfärdat av licensierade läkare</h1>
+                <p>365Doktor tillhandahåller on-demand medicinska konsultationer för patienter med milda medicinska tillstånd. Vi kopplar patienter med EU-licensierade läkare via vår säkra vårdportal. Alla konsultationer är diskreta och din medicinska information kommer bara att ses av din online-läkare. Eftersom hälsan hos våra patienter är högst på vår prioriteringslista behandlar vi endast milda eller återkommande hälsotillstånd som vanligtvis inte kräver personlig medicinsk uppföljning. När det medicinska samrådet har slutförts får kvalificerade kandidater ett online-recept inom några minuter.</p>
+                <a href="javascript:void(0);" class="cta__btn btn">Starta online läkarkonsultation</a>
+            </div>
+            <img src="<?php bloginfo('template_url'); ?>/img/back-about.png" alt="man" class="cta__img">
+        </div>
+    </div>
+    <div class="container">
+        <p>Alla läkare som är associerade med 365Doktor är licensierade och utrustade för att tillhandahålla ett online-recept som gäller på alla apotek. De har samma utbildningsnivå som din lokala läkare eller läkare som övar på ett sjukhus.</p>
+        <p>Känner du dig mer bekväm med att prata ett annat språk? Vi har täckt dig! För att rymma ett brett utbud av patienter i hela Europa talar våra läkare en mängd olika språk.</p>
+    </div>
+    <div class="container-section">
+        <div class="flex-block">
+            <div class="flex-block__text">
+                <h2>Vad är telemedicin?</h2>
+                <p>Sjukvårdsbestämmelserna i Europa förändras. Stora framsteg tas mot att tillhandahålla online-tillgång till vårdtjänster för patienter i hela Europa. Telemedicin utnyttjar det snabbt föränderliga digitala landskapet för att avlägsna behovet av patienter att besöka en läkare, så att de kan få recept på vanliga och återkommande medicinska tillstånd.</p>
+                <p>365Doktors vision är att göra vården bekväm och tillgänglig för patienter runt om i Europa. Det erkänns nu snabbt som en pålitlig ledare inom detta snabbt växande område.</p>
+            </div>
+            <div class="flex-block__img">
+                <img src="<?php bloginfo('template_url'); ?>/img/telemedicine1.png">
+            </div>
+        </div>
+    </div>
+    <div class="grey-back">
+        <div class="container-section flex-block flex-reverse-mob">
+            <div class="flex-block__img">
+                <img src="<?php bloginfo('template_url'); ?>/img/telemedicine2.png">
+            </div>
+            <div class="flex-block__text">
+                <h2>Är telemedicin lagligt?</h2>
+                <p>Ett gränsöverskridande direktiv tillåter onlinebehandling i alla EU-länder. Artikeln säger: "I enlighet med direktiv 2011/24 / EU får patienter behandlas i andra medlemsstater än deras eget uppehållstillstånd. Enligt artikel 4 bör gränsöverskridande hälso- och sjukvård tillhandahållas i enlighet med artikel 4 i direktiv 2011/24 / EU i enlighet med med lagstiftningen i behandlingsmedlemsstaten och standarder och riktlinjer för kvalitet och säkerhet som fastställts av behandlingsmedlemsstaten och facklig lagstiftning om säkerhetsnormer. "</p>
+                <p>Med andra ord: om onlinebehandling och recept är tillåtna i en patients medlemsland, har patienten rätt att söka läkarvård i andra EU-medlemsstater.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container flex-block align-center">
+        <div class="flex-block__text">
+            <h2>Är det konfidentiellt?</h2>
+            <p>365Doktor säkerställer den högsta nivån av dataskydd och integritet. När du använder 365Doktor kan du vara säker på att alla åtgärder vidtas för att ge det nödvändiga skyddet så att din privata och känsliga information alltid är säker och säker.</p>
+        </div>
+        <div class="flex-block__img">
+            <img src="<?php bloginfo('template_url'); ?>/img/telemedicine3.png">
+        </div>
+    </div>
+<?php elseif ($my_lang == 'da') : ?>
+    <div class="container cta__back about">
+        <div class="cta">
+            <div class="cta__text">
+                <h1>Få on-demand online recepter <br>Udstedt af autoriserede læger</h1>
+                <p>365Doktor leverer on-demand online medicinske konsultationer til patienter med milde medicinske tilstande. Vi forbinder patienter med EU-godkendte læger gennem vores sikre sundhedsportal. Alle konsultationer er diskrete, og dine medicinske oplysninger vil kun nogensinde blive set af din online læge. Fordi vores patients sundhed er højest på vores prioritetsliste, behandler vi kun milde eller tilbagevendende sundhedsmæssige forhold, der typisk ikke kræver personlig medicinsk opfølgning. Når den medicinske konsultation er afsluttet, vil kvalificerede kandidater modtage en online recept inden for få minutter.</p>
+                <a href="javascript:void(0);" class="cta__btn btn">Start online lægehøring</a>
+            </div>
+            <img src="<?php bloginfo('template_url'); ?>/img/back-about.png" alt="man" class="cta__img">
+        </div>
+    </div>
+    <div class="container">
+        <p>Alle læger, der er tilknyttet 365Doktor, har licens og er udstyret til at give en online recept, der er gyldig på ethvert apotek. De har samme uddannelsesniveau som din lokale læge eller læger, der praktiserer på et hospital.</p>
+        <p>Har du det mere behageligt at tale et andet sprog? Vi har dig dækket! For at imødekomme en bred vifte af patienter i hele Europa taler vores læger forskellige sprog.</p>
+    </div>
+    <div class="container-section">
+        <div class="flex-block">
+            <div class="flex-block__text">
+                <h2>Hvad er telemedicin?</h2>
+                <p>Sundhedsbestemmelserne i Europa ændrer sig. Der tages store fremskridt i retning af at give patienter i hele Europa adgang til sundhedsydelser online. Telemedicin udnytter det hurtigt udviklende digitale landskab til at fjerne behovet for patienter til at besøge en læge, så de kan få recept på almindelige og tilbagevendende medicinske tilstande.</p>
+                <p>365Doktors vision er at gøre sundhedsvæsenet praktisk og tilgængeligt for patienter i hele Europa. Det anerkendes nu hurtigt som en betroet leder inden for dette hurtigt voksende felt.</p>
+            </div>
+            <div class="flex-block__img">
+                <img src="<?php bloginfo('template_url'); ?>/img/telemedicine1.png">
+            </div>
+        </div>
+    </div>
+    <div class="grey-back">
+        <div class="container-section flex-block flex-reverse-mob">
+            <div class="flex-block__img">
+                <img src="<?php bloginfo('template_url'); ?>/img/telemedicine2.png">
+            </div>
+            <div class="flex-block__text">
+                <h2>Er telemedicin lovlig?</h2>
+                <p>Et grænseoverskridende direktiv tillader onlinebehandling på tværs af EU-lande. Artiklen siger: "I overensstemmelse med direktiv 2011/24 / EU får patienter lov til at blive behandlet i andre medlemsstater end deres egen bopælsstat. I henhold til artikel 4 skal grænseoverskridende sundhedspleje i 2011/24 / EU leveres i overensstemmelse med med lovgivningen i behandlingsmedlemsstaten og standarder og retningslinjer for kvalitet og sikkerhed fastlagt af behandlingsmedlemsstaten og fagforeningslovgivning om sikkerhedsstandarder. "</p>
+                <p>Med andre ord: hvis onlinebehandling og recepter er tilladt i en patients medlemsland, har denne patient ret til at søge lægehjælp i andre EU-medlemsstater.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container flex-block align-center">
+        <div class="flex-block__text">
+            <h2>Er det fortroligt?</h2>
+            <p>365Doktor sikrer det højeste niveau af databeskyttelse og privatliv. Når du bruger 365Doktor, kan du være sikker på, at alle foranstaltninger træffes for at give den nødvendige beskyttelse, så dine private og følsomme oplysninger altid er sikre og sikre.</p>
+        </div>
+        <div class="flex-block__img">
+            <img src="<?php bloginfo('template_url'); ?>/img/telemedicine3.png">
+        </div>
+    </div>
+<?php elseif ($my_lang == 'pt') : ?>
+    <div class="container cta__back about">
+        <div class="cta">
+            <div class="cta__text">
+                <h1>Obtenha prescrições on-line sob demanda <br>Emitido por médicos licenciados</h1>
+                <p>365Doktor oferece consultas médicas on-line sob demanda para pacientes com condições médicas leves. Conectamos pacientes a médicos licenciados pela UE por meio de nosso portal seguro de saúde. Todas as consultas são discretas e os seus dados médicos apenas serão vistos pelo seu médico online. Como a saúde de nossos pacientes está no topo de nossa lista de prioridades, tratamos apenas condições de saúde leves ou recorrentes que normalmente não requerem acompanhamento médico pessoal. Assim que a consulta médica for concluída, os candidatos qualificados receberão uma receita online em minutos.</p>
+                <a href="javascript:void(0);" class="cta__btn btn">Iniciar Consulta Médica Online</a>
+            </div>
+            <img src="<?php bloginfo('template_url'); ?>/img/back-about.png" alt="man" class="cta__img">
+        </div>
+    </div>
+    <div class="container">
+        <p>Todos os médicos associados ao 365Doktor são licenciados e equipados para fornecer uma receita online válida em qualquer farmácia. Eles têm o mesmo nível de treinamento que seu médico local ou médicos que atuam em um hospital.</p>
+        <p>Você se sente mais confortável falando outro idioma? Nós temos você coberto! Para acomodar uma ampla variedade de pacientes em toda a Europa, nossos médicos falam vários idiomas.</p>
+    </div>
+    <div class="container-section">
+        <div class="flex-block">
+            <div class="flex-block__text">
+                <h2>O que é telemedicina?</h2>
+                <p>Os regulamentos de saúde na Europa estão mudando. Grandes avanços estão sendo dados no sentido de fornecer acesso online a serviços de saúde para pacientes em toda a Europa. A telemedicina aproveita o panorama digital em rápida evolução para eliminar a necessidade de os pacientes visitarem um médico, de modo que possam obter uma receita para condições médicas comuns e recorrentes.</p>
+                <p>A visão da 365Doktor é tornar a saúde conveniente e acessível para pacientes em toda a Europa. Agora está sendo rapidamente reconhecida como um líder confiável neste campo de rápido crescimento.</p>
+            </div>
+            <div class="flex-block__img">
+                <img src="<?php bloginfo('template_url'); ?>/img/telemedicine1.png">
+            </div>
+        </div>
+    </div>
+    <div class="grey-back">
+        <div class="container-section flex-block flex-reverse-mob">
+            <div class="flex-block__img">
+                <img src="<?php bloginfo('template_url'); ?>/img/telemedicine2.png">
+            </div>
+            <div class="flex-block__text">
+                <h2>A telemedicina é legal?</h2>
+                <p>Uma diretiva transfronteiriça permite o tratamento online nos países da UE. O artigo afirma: "De acordo com a Diretiva 2011/24 / UE, os pacientes podem ser tratados em outros Estados-Membros que não o seu próprio estado de residência. De acordo com o Artigo 4 da Diretiva 2011/24 / UE, os cuidados de saúde transfronteiriços devem ser prestados de acordo com com a legislação do estado membro de tratamento e as normas e diretrizes de qualidade e segurança estabelecidas pelo estado membro de tratamento e a legislação sindical sobre normas de segurança. ”</p>
+                <p>Por outras palavras: se o tratamento e as prescrições online forem admissíveis no Estado-Membro de um doente, esse doente tem o direito de procurar cuidados médicos noutros Estados-Membros da UE.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container flex-block align-center">
+        <div class="flex-block__text">
+            <h2>É confidencial?</h2>
+            <p>365Doktor garante o mais alto nível de proteção de dados e privacidade. Ao usar o 365Doktor, você pode ter certeza de que todas as medidas são tomadas para fornecer a proteção necessária para que suas informações privadas e confidenciais estejam seguras e protegidas o tempo todo.</p>
+        </div>
+        <div class="flex-block__img">
+            <img src="<?php bloginfo('template_url'); ?>/img/telemedicine3.png">
+        </div>
+    </div>
 <?php endif; ?>
 <?php get_template_part('includes/inc', 'started-now-block'); ?>
 

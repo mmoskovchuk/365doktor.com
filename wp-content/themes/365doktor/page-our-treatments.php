@@ -355,6 +355,93 @@
             </a>
         </div>-->
     </div>
+<?php elseif ($my_lang == 'sv') : ?>
+    <div class="container-section text-center border-bottom">
+        <h1>Sök behandling för alla tillstånd</h1>
+        <p>Slutligen är online läkartjänster här! Nu kan du få ett läkarecept online för vanliga tillstånd som drabbar män och kvinnor. Se våra mest populära förhållanden nedan.</p>
+        <div class="categories">
+            <?php
+            // Check rows exists.
+            if (have_rows('our_treatments_menu_repeater')):
+                // Loop through rows.
+                while (have_rows('our_treatments_menu_repeater')) : the_row();
+                    $postobject = get_sub_field('our_treatments_treatment_menu_name');
+                    ?>
+
+                    <a href="<?php the_sub_field('our_treatments_treatment_menu_link') ?>" class="categories__item">
+                        <?php
+                        $image = get_sub_field('our_treatments_treatment_menu_img');
+                        if( !empty( $image ) ): ?>
+                            <img src="<?php echo esc_url($image); ?>" class="categories__item-icon" />
+                        <?php endif; ?>
+                        <?php echo $postobject->post_title ?>
+                    </a>
+
+
+                <?php
+                endwhile;
+            endif;
+            ?>
+        </div>
+    </div>
+<?php elseif ($my_lang == 'da') : ?>
+    <div class="container-section text-center border-bottom">
+        <h1>Søg behandling for enhver tilstand</h1>
+        <p>Endelig er online lægehjælp her! Nu kan du få en læge recept online for almindelige tilstande, der rammer mænd og kvinder. Se vores mest populære forhold nedenfor.</p>
+        <div class="categories">
+            <?php
+            // Check rows exists.
+            if (have_rows('our_treatments_menu_repeater')):
+                // Loop through rows.
+                while (have_rows('our_treatments_menu_repeater')) : the_row();
+                    $postobject = get_sub_field('our_treatments_treatment_menu_name');
+                    ?>
+
+                    <a href="<?php the_sub_field('our_treatments_treatment_menu_link') ?>" class="categories__item">
+                        <?php
+                        $image = get_sub_field('our_treatments_treatment_menu_img');
+                        if( !empty( $image ) ): ?>
+                            <img src="<?php echo esc_url($image); ?>" class="categories__item-icon" />
+                        <?php endif; ?>
+                        <?php echo $postobject->post_title ?>
+                    </a>
+
+
+                <?php
+                endwhile;
+            endif;
+            ?>
+        </div>
+    </div>
+<?php elseif ($my_lang == 'pt') : ?>
+    <div class="container-section text-center border-bottom">
+        <h1>Procure tratamento para qualquer condição</h1>
+        <p>Finalmente, os serviços médicos online estão aqui! Agora você pode obter uma prescrição médica online para condições comuns que afetam homens e mulheres. Veja nossas condições mais populares abaixo.</p>
+        <div class="categories">
+            <?php
+            // Check rows exists.
+            if (have_rows('our_treatments_menu_repeater')):
+                // Loop through rows.
+                while (have_rows('our_treatments_menu_repeater')) : the_row();
+                    $postobject = get_sub_field('our_treatments_treatment_menu_name');
+                    ?>
+
+                    <a href="<?php the_sub_field('our_treatments_treatment_menu_link') ?>" class="categories__item">
+                        <?php
+                        $image = get_sub_field('our_treatments_treatment_menu_img');
+                        if( !empty( $image ) ): ?>
+                            <img src="<?php echo esc_url($image); ?>" class="categories__item-icon" />
+                        <?php endif; ?>
+                        <?php echo $postobject->post_title ?>
+                    </a>
+
+
+                <?php
+                endwhile;
+            endif;
+            ?>
+        </div>
+    </div>
 <?php endif; ?>
 
 <?php get_footer(); ?>

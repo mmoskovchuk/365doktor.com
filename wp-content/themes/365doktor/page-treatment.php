@@ -15,6 +15,12 @@
                     <a href="javascript:void(0);" class="cta__btn btn">Starten Sie die Online-Arztberatung</a>
                 <?php elseif ($my_lang == 'pl') : ?>
                     <a href="javascript:void(0);" class="cta__btn btn">Rozpocznij konsultację lekarską online</a>
+                <?php elseif ($my_lang == 'sv') : ?>
+                    <a href="javascript:void(0);" class="cta__btn btn">Starta online läkarkonsultation</a>
+                <?php elseif ($my_lang == 'da') : ?>
+                    <a href="javascript:void(0);" class="cta__btn btn">Start online lægehøring</a>
+                <?php elseif ($my_lang == 'pt') : ?>
+                    <a href="javascript:void(0);" class="cta__btn btn">Iniciar Consulta Médica Online</a>
                 <?php endif; ?>
             </div>
             <img src="<?php the_field('image_cta'); ?>" class="cta__img" alt="<?php bloginfo('name'); ?>">
@@ -70,6 +76,54 @@
                     <div>Wyślij receptę do swojej domowej apteki lub zamów lekarstwo dostarczone do domu</div>
                 </div>
             </div>
+        <?php elseif ($my_lang == 'sv') : ?>
+            <h2 class="text-center">Hur det fungerar</h2>
+            <div class="how">
+                <div class="how__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/desc.svg" alt="questionnaire">
+                    <div>Välj ditt medicinska tillstånd och fyll i ett kort medicinskt frågeformulär</div>
+                </div>
+                <div class="how__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/paper.svg" alt="Prescription">
+                    <div>Vår läkare kommer att rekommendera behandling och utfärda receptet (om det är lämpligt)</div>
+                </div>
+                <div class="how__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/list.svg" alt="Delivered">
+                    <div>Skicka receptet till ditt hemapotek eller få medicinen levererad till din dörr</div>
+                </div>
+            </div>
+        <?php elseif ($my_lang == 'da') : ?>
+            <h2 class="text-center">Hvordan det virker</h2>
+            <div class="how">
+                <div class="how__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/desc.svg" alt="questionnaire">
+                    <div>Vælg din medicinske tilstand, og udfyld et kort medicinsk spørgeskema</div>
+                </div>
+                <div class="how__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/paper.svg" alt="Prescription">
+                    <div>Vores læge vil anbefale behandling og udstede recept (hvis relevant)</div>
+                </div>
+                <div class="how__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/list.svg" alt="Delivered">
+                    <div>Send receptet til dit hjemmeapotek eller få medicinen leveret til din dør</div>
+                </div>
+            </div>
+        <?php elseif ($my_lang == 'pt') : ?>
+            <h2 class="text-center">Como funciona</h2>
+            <div class="how">
+                <div class="how__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/desc.svg" alt="questionnaire">
+                    <div>Selecione sua condição médica e preencha um breve questionário médico</div>
+                </div>
+                <div class="how__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/paper.svg" alt="Prescription">
+                    <div>Nosso médico recomendará o tratamento e emitirá a receita (se apropriado)</div>
+                </div>
+                <div class="how__item">
+                    <img src="<?php bloginfo('template_url'); ?>/img/list.svg" alt="Delivered">
+                    <div>Envie a receita para a sua farmácia doméstica ou faça com que o medicamento seja entregue à sua porta</div>
+                </div>
+            </div>
         <?php endif; ?>
 
     </section>
@@ -106,6 +160,7 @@
                                 <p><b>Active ingredient:</b> <?php the_sub_field('active_ingredient') ?></p>
                                 <p><b>How it works:</b> <?php the_sub_field('how_it_works') ?></p>
                                 <p><b>Advantages and disadvantages:</b> <?php the_sub_field('advantages_and_disadvantages') ?></p>
+                                <p><b>Risks:</b> <?php the_sub_field('risks') ?></p>
                             </a>
                     </div>
                     <?php endwhile ?>
@@ -130,6 +185,7 @@
                                 <p><b>Wirkstoff:</b> <?php the_sub_field('active_ingredient') ?></p>
                                 <p><b>Wie es funktioniert:</b> <?php the_sub_field('how_it_works') ?></p>
                                 <p><b>Vorteile und Nachteile:</b> <?php the_sub_field('advantages_and_disadvantages') ?></p>
+                                <p><b>Risiken:</b> <?php the_sub_field('risks') ?></p>
                                 </a>
                             </div>
                     <?php endwhile ?>
@@ -155,6 +211,7 @@
                                 <p><b>Składnik czynny:</b> <?php the_sub_field('active_ingredient') ?></p>
                                 <p><b>Jak to działa:</b> <?php the_sub_field('how_it_works') ?></p>
                                 <p><b>Zalety i wady:</b> <?php the_sub_field('advantages_and_disadvantages') ?></p>
+                                <p><b>Ryzyka:</b> <?php the_sub_field('risks') ?></p>
                                 </a>
                             </div>
                         <?php endwhile ?>
@@ -162,6 +219,75 @@
                     <?php endif; ?>
 
 
+            <?php elseif ($my_lang == 'sv') : ?>
+                <?php
+                // Check rows exists.
+                if (have_rows('sidebar_treatment_page_tpl')): ?>
+                    <aside class="with-sidebar__aside">
+                        <?php  // Loop through rows.  ?>
+                        <?php while (have_rows('sidebar_treatment_page_tpl')) : the_row(); ?>
+                            <div class="with-sidebar__aside-item">
+                                <?php
+                                $image = get_sub_field('sidebar_img');
+                                if( !empty( $image ) ): ?>
+                                    <img src="<?php echo esc_url($image); ?>" />
+                                <?php endif; ?>
+                                <p><b>Medicin:</b> <?php the_sub_field('medication') ?></p>
+                                <p><b>Aktiv beståndsdel:</b> <?php the_sub_field('active_ingredient') ?></p>
+                                <p><b>Hur det fungerar:</b> <?php the_sub_field('how_it_works') ?></p>
+                                <p><b>Fördelar och nackdelar:</b> <?php the_sub_field('advantages_and_disadvantages') ?></p>
+                                <p><b>Risker:</b> <?php the_sub_field('risks') ?></p>
+                                </a>
+                            </div>
+                        <?php endwhile ?>
+                    </aside>
+                <?php endif; ?>
+            <?php elseif ($my_lang == 'da') : ?>
+                <?php
+                // Check rows exists.
+                if (have_rows('sidebar_treatment_page_tpl')): ?>
+                    <aside class="with-sidebar__aside">
+                        <?php  // Loop through rows.  ?>
+                        <?php while (have_rows('sidebar_treatment_page_tpl')) : the_row(); ?>
+                            <div class="with-sidebar__aside-item">
+                                <?php
+                                $image = get_sub_field('sidebar_img');
+                                if( !empty( $image ) ): ?>
+                                    <img src="<?php echo esc_url($image); ?>" />
+                                <?php endif; ?>
+                                <p><b>Medicin:</b> <?php the_sub_field('medication') ?></p>
+                                <p><b>Aktiv ingrediens:</b> <?php the_sub_field('active_ingredient') ?></p>
+                                <p><b>Hvordan det virker:</b> <?php the_sub_field('how_it_works') ?></p>
+                                <p><b>Fordele og ulemper:</b> <?php the_sub_field('advantages_and_disadvantages') ?></p>
+                                <p><b>Risici:</b> <?php the_sub_field('risks') ?></p>
+                                </a>
+                            </div>
+                        <?php endwhile ?>
+                    </aside>
+                <?php endif; ?>
+            <?php elseif ($my_lang == 'pt') : ?>
+                <?php
+                // Check rows exists.
+                if (have_rows('sidebar_treatment_page_tpl')): ?>
+                    <aside class="with-sidebar__aside">
+                        <?php  // Loop through rows.  ?>
+                        <?php while (have_rows('sidebar_treatment_page_tpl')) : the_row(); ?>
+                            <div class="with-sidebar__aside-item">
+                                <?php
+                                $image = get_sub_field('sidebar_img');
+                                if( !empty( $image ) ): ?>
+                                    <img src="<?php echo esc_url($image); ?>" />
+                                <?php endif; ?>
+                                <p><b>Medicamento:</b> <?php the_sub_field('medication') ?></p>
+                                <p><b>Ingrediente ativo:</b> <?php the_sub_field('active_ingredient') ?></p>
+                                <p><b>Como funciona:</b> <?php the_sub_field('how_it_works') ?></p>
+                                <p><b>Vantagens e desvantagens:</b> <?php the_sub_field('advantages_and_disadvantages') ?></p>
+                                <p><b>Riscos:</b> <?php the_sub_field('risks') ?></p>
+                                </a>
+                            </div>
+                        <?php endwhile ?>
+                    </aside>
+                <?php endif; ?>
             <?php endif; ?>
         </div>
         <div class="toggle-block">

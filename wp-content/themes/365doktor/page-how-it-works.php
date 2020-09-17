@@ -92,6 +92,84 @@
         </div>
         <p>W zaledwie 3 szybkich krokach możesz otrzymać lek i receptę</p>
     </section>
+<?php elseif ($my_lang == 'sv') : ?>
+    <div class="container cta__back">
+        <div class="cta">
+            <div class="cta__text">
+                <h1>Konfidentiella medicinska konsultationer <br>Gjord snabbt och enkelt</h1>
+                <p>Nu behöver du inte längre lämna ditt hem för att få en medicinsk konsultation. Vår online-läkarmottagning erbjuder män och kvinnor ett snabbare och enklare sätt att få behandling för vanliga tillstånd. Svara bara på ett kort frågeformulär för att få ett recept online från en licensierad läkare 24/7. Inget mer slöseri med pendling. Inga fler obekväma läkarbesök.</p>
+                <a href="javascript:void(0);" class="cta__btn btn">Starta online läkarkonsultation</a>
+            </div>
+            <img src="<?php bloginfo('template_url'); ?>/img/cta-how-back.png" alt="man" class="cta__img">
+        </div>
+    </div>
+    <section class="container-section text-center">
+        <h2>Säker. Reglerad. Säkrad</h2>
+        <div class="secured">
+            <div>
+                <img src="<?php bloginfo('template_url'); ?>/img/comodo.png" alt="comodo">
+            </div>
+            <div>
+                <img src="<?php bloginfo('template_url'); ?>/img/dmca.png" alt="dmca">
+            </div>
+            <div>
+                <img src="<?php bloginfo('template_url'); ?>/img/trustpilot.png" alt="trustpilot">
+            </div>
+        </div>
+        <p>Med bara tre snabba steg kan du få din behandling och recept på väg till dig</p>
+    </section>
+<?php elseif ($my_lang == 'da') : ?>
+    <div class="container cta__back">
+        <div class="cta">
+            <div class="cta__text">
+                <h1>Fortrolige medicinske konsultationer <br>Lavet hurtigt og nemt</h1>
+                <p>Nu behøver du ikke længere at forlade dit hjem for at få en lægehjælp. Vores online lægeklinik tilbyder mænd og kvinder en hurtigere og lettere måde at få behandling under almindelige tilstande. Du skal blot besvare et kort spørgeskema for at få en online recept fra en autoriseret læge 24/7. Ikke mere spild af tid på pendling. Ikke flere ubehagelige lægebesøg.</p>
+                <a href="javascript:void(0);" class="cta__btn btn">Start online lægehøring</a>
+            </div>
+            <img src="<?php bloginfo('template_url'); ?>/img/cta-how-back.png" alt="man" class="cta__img">
+        </div>
+    </div>
+    <section class="container-section text-center">
+        <h2>Sikker. Reguleret. Sikret</h2>
+        <div class="secured">
+            <div>
+                <img src="<?php bloginfo('template_url'); ?>/img/comodo.png" alt="comodo">
+            </div>
+            <div>
+                <img src="<?php bloginfo('template_url'); ?>/img/dmca.png" alt="dmca">
+            </div>
+            <div>
+                <img src="<?php bloginfo('template_url'); ?>/img/trustpilot.png" alt="trustpilot">
+            </div>
+        </div>
+        <p>På kun 3 hurtige trin kan du få din behandling og recept på vej til dig</p>
+    </section>
+<?php elseif ($my_lang == 'pt') : ?>
+    <div class="container cta__back">
+        <div class="cta">
+            <div class="cta__text">
+                <h1>Consultas Médicas Confidenciais <br>Tornado rápido e fácil</h1>
+                <p>Agora você não precisa mais sair de casa para fazer uma consulta médica. Nossa clínica médica online oferece a homens e mulheres uma maneira mais rápida e fácil de obter tratamento para condições comuns. Basta responder a um pequeno questionário para obter uma receita online de um médico licenciado, 24 horas por dia, 7 dias por semana. Não perca mais tempo com o deslocamento. Não há mais visitas ao médico desconfortáveis.</p>
+                <a href="javascript:void(0);" class="cta__btn btn">Iniciar Consulta Médica Online</a>
+            </div>
+            <img src="<?php bloginfo('template_url'); ?>/img/cta-how-back.png" alt="man" class="cta__img">
+        </div>
+    </div>
+    <section class="container-section text-center">
+        <h2>Seguro. Regulamentado. Garantido</h2>
+        <div class="secured">
+            <div>
+                <img src="<?php bloginfo('template_url'); ?>/img/comodo.png" alt="comodo">
+            </div>
+            <div>
+                <img src="<?php bloginfo('template_url'); ?>/img/dmca.png" alt="dmca">
+            </div>
+            <div>
+                <img src="<?php bloginfo('template_url'); ?>/img/trustpilot.png" alt="trustpilot">
+            </div>
+        </div>
+        <p>Em apenas 3 passos rápidos você pode ter seu tratamento e prescrição a caminho de você</p>
+    </section>
 <?php endif; ?>
 <?php get_template_part('includes/inc', 'started-now-block'); ?>
 
