@@ -23,8 +23,8 @@
                     <a href="javascript:void(0);" class="cta__btn btn">Iniciar Consulta Médica Online</a>
                 <?php endif; ?>
             </div>
-            <img src="<?php the_field('image_cta'); ?>" class="cta__img" alt="<?php bloginfo('name'); ?>">
         </div>
+        <img src="<?php the_field('image_cta'); ?>" class="cta__img" alt="<?php bloginfo('name'); ?>">
     </div>
     <!--How it works-->
     <section class="container-section">

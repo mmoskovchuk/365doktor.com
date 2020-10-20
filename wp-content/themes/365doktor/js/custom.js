@@ -5,14 +5,19 @@ burger.onclick = function () {
     submenu.classList.toggle('active');
 };
 
-
+var incategory = $('.page-template-page-treatment .header__wrap');
+if (incategory) {
 window.onscroll = function () {
-    if (window.pageYOffset > 100) {
-        document.getElementsByClassName('header__wrap')[0].classList.add('fixed');
-    } else if (window.pageYOffset == 0) {
-        document.getElementsByClassName('header__wrap')[0].classList.remove('fixed');
-    }
+        if (window.pageYOffset > 100) {
+            document.getElementsByClassName('header__wrap')[0].classList.add('fixed');
+        } else if (window.pageYOffset == 0) {
+            document.getElementsByClassName('header__wrap')[0].classList.remove('fixed');
+            $('.page-template-page-treatment .header__wrap').addClass('fixed');
+        }
 };
+    $('.page-template-page-treatment .header__wrap').addClass('fixed');
+}
+
 
 
 var toggleBlock = document.getElementsByClassName('toggle-block'),

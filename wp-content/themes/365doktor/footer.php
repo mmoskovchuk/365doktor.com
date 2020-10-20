@@ -9,29 +9,29 @@
             <img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="logo">
             <ul>
                 <?php if ($my_lang == 'en') : ?>
-                    <li><b>Local:</b> 0800-4725510 FREE in the UK</li>
-                    <li><b>International:</b> +43-681-84665606</li>
-                    <li><b>Email:</b> support@apomeds.com</li>
+                    <!--<li><b>Local:</b> 0800-4725510 FREE in the UK</li>
+                    <li><b>International:</b> +43-681-84665606</li>-->
+                    <li><b>Email:</b> support@365doktor.com</li>
                 <?php elseif ($my_lang == 'de') : ?>
-                    <li><b>Lokal:</b> 0800-4725510 KOSTENLOS in Großbritannien</li>
-                    <li><b>International:</b> +43-681-84665606</li>
-                    <li><b>Email:</b> support@apomeds.com</li>
+                    <!--<li><b>Lokal:</b> 0800-4725510 KOSTENLOS in Großbritannien</li>
+                    <li><b>International:</b> +43-681-84665606</li>-->
+                    <li><b>Email:</b> support@365doktor.com</li>
                 <?php elseif ($my_lang == 'pl') : ?>
-                    <li><b>Lokalny:</b> 0800-4725510 ZA DARMO w Wielkiej Brytanii</li>
-                    <li><b>Międzynarodowy:</b> +43-681-84665606</li>
-                    <li><b>E-mail:</b> support@apomeds.com</li>
+                   <!-- <li><b>Lokalny:</b> 0800-4725510 ZA DARMO w Wielkiej Brytanii</li>
+                    <li><b>Międzynarodowy:</b> +43-681-84665606</li>-->
+                    <li><b>E-mail:</b> support@365doktor.com</li>
                 <?php elseif ($my_lang == 'sv') : ?>
-                    <li><b>Lokal:</b> 0800-4725510 GRATIS i Storbritannien</li>
-                    <li><b>Internationell:</b> +43-681-84665606</li>
-                    <li><b>E-post:</b> support@apomeds.com</li>
+                    <!--<li><b>Lokal:</b> 0800-4725510 GRATIS i Storbritannien</li>
+                    <li><b>Internationell:</b> +43-681-84665606</li>-->
+                    <li><b>E-post:</b> support@365doktor.com</li>
                 <?php elseif ($my_lang == 'da') : ?>
-                    <li><b>Lokal:</b> 0800-4725510 GRATIS i Storbritannien</li>
-                    <li><b>International:</b> +43-681-84665606</li>
-                    <li><b>E-mail:</b> support@apomeds.com</li>
+                    <!--<li><b>Lokal:</b> 0800-4725510 GRATIS i Storbritannien</li>
+                    <li><b>International:</b> +43-681-84665606</li>-->
+                    <li><b>E-mail:</b> support@365doktor.com</li>
                 <?php elseif ($my_lang == 'pt') : ?>
-                    <li><b>Local:</b> 0800-4725510 GRÁTIS no Reino Unido</li>
-                    <li><b>Internacional:</b> +43-681-84665606</li>
-                    <li><b>O email:</b> support@apomeds.com</li>
+                    <!--<li><b>Local:</b> 0800-4725510 GRÁTIS no Reino Unido</li>
+                    <li><b>Internacional:</b> +43-681-84665606</li>-->
+                    <li><b>O email:</b> support@365doktor.com</li>
                 <?php endif; ?>
             </ul>
             <div class="footer__contacts-soc">
