@@ -53,7 +53,7 @@ function ox_adding_scripts() {
         if (!is_page(array('', ''))) {
 
             /*custom css*/
-            wp_enqueue_style('custom', get_template_directory_uri() . '/css/style.min.css', array(), null);
+            wp_enqueue_style('custom', get_template_directory_uri() . '/css/style.min.css', array(), 5.5);
 
         }
 

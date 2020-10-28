@@ -4,19 +4,32 @@
 <?php $my_lang = pll_current_language(); ?>
 <?php get_header(); ?>
 
-<?php if ($my_lang == 'en') : ?>
+
     <div class="container cta__back">
         <div class="cta">
             <div class="cta__text">
-                <h1>Confidential Medical Consultations <br>Made Fast And Easy</h1>
-                <p>Now you no longer need to leave your home to get a medical consultation. Our online doctor clinic offers men and women a faster and easier way to get treatment for common conditions. Simply answer a short questionnaire to get an online prescription from a licensed doctor, 24/7. No more wasting time commuting. No more uncomfortable doctor visits.</p>
-                <a href="javascript:void(0);" class="cta__btn btn">Start Online Doctor Consultation</a>
+                <h1><?php the_field('how_it_works_title'); ?></h1>
+                <p><?php the_field('how_it_works_desc'); ?></p>
+                <?php if ($my_lang == 'en') : ?>
+                    <a href="javascript:void(0);" class="cta__btn btn">Start Online Doctor Consultation</a>
+                <?php elseif ($my_lang == 'de') : ?>
+                    <a href="javascript:void(0);" class="cta__btn btn">Starten Sie die Online-Arztberatung</a>
+                <?php elseif ($my_lang == 'pl') : ?>
+                    <a href="javascript:void(0);" class="cta__btn btn">Rozpocznij konsultację lekarską online</a>
+                <?php elseif ($my_lang == 'sv') : ?>
+                    <a href="javascript:void(0);" class="cta__btn btn">Starta online läkarkonsultation</a>
+                <?php elseif ($my_lang == 'da') : ?>
+                    <a href="javascript:void(0);" class="cta__btn btn">Start online lægehøring</a>
+                <?php elseif ($my_lang == 'pt') : ?>
+                    <a href="javascript:void(0);" class="cta__btn btn">Iniciar Consulta Médica Online</a>
+                <?php endif; ?>
             </div>
-            <img src="<?php bloginfo('template_url'); ?>/img/cta-how-back.png" alt="man" class="cta__img">
+            <img src="<?php the_field('image_how_it_works'); ?>" alt="<?php bloginfo('name'); ?>" class="how-it-works__img">
+            <!--<img src="<?php /*bloginfo('template_url'); */?>/img/cta-how-back.png" alt="man" class="cta__img">-->
         </div>
     </div>
     <section class="container-section text-center">
-        <h2>Safe. Regulated. Secured</h2>
+        <h2><?php the_field('how_it_works_title_2'); ?></h2>
         <div class="secured">
             <div>
                 <img src="<?php bloginfo('template_url'); ?>/img/comodo.png" alt="comodo">
@@ -28,9 +41,9 @@
                 <img src="<?php bloginfo('template_url'); ?>/img/trustpilot.png" alt="trustpilot">
             </div>
         </div>
-        <p>In just 3 quick steps you can have your treatment and prescription on its way to you</p>
+        <p><?php the_field('how_it_works_desc_2'); ?></p>
     </section>
-<?php elseif ($my_lang == 'de') : ?>
+<?php /*if ($my_lang == 'de') : */?><!--
     <div class="container cta__back">
         <div class="cta">
             <div class="cta__text">
@@ -41,25 +54,25 @@
                     begeben.</p>
                 <a href="javascript:void(0);" class="cta__btn btn">Starten Sie die Online-Arztberatung</a>
             </div>
-            <img src="<?php bloginfo('template_url'); ?>/img/cta-how-back.png" alt="man" class="cta__img">
+            <img src="<?php /*bloginfo('template_url'); */?>/img/cta-how-back.png" alt="man" class="cta__img">
         </div>
     </div>
     <section class="container-section text-center">
         <h2>Sicher. Reguliert. Abgesichert</h2>
         <div class="secured">
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/comodo.png" alt="comodo">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/comodo.png" alt="comodo">
             </div>
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/dmca.png" alt="dmca">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/dmca.png" alt="dmca">
             </div>
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/trustpilot.png" alt="trustpilot">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/trustpilot.png" alt="trustpilot">
             </div>
         </div>
         <p>In nur 3 schnellen Schritten können Sie Ihre Behandlung und Ihr Rezept auf dem Weg zu Ihnen haben</p>
     </section>
-<?php elseif ($my_lang == 'pl') : ?>
+<?php /*elseif ($my_lang == 'pl') : */?>
     <div class="container cta__back">
         <div class="cta">
             <div class="cta__text">
@@ -74,25 +87,25 @@
                     drzwi, więc nie będziesz już nawet musiał chodzić do apteki.</p>
                 <a href="javascript:void(0);" class="cta__btn btn">Rozpocznij konsultację medyczną online</a>
             </div>
-            <img src="<?php bloginfo('template_url'); ?>/img/cta-how-back.png" alt="man" class="cta__img">
+            <img src="<?php /*bloginfo('template_url'); */?>/img/cta-how-back.png" alt="man" class="cta__img">
         </div>
     </div>
     <section class="container-section text-center">
         <h2>Bezpieczeństwo. Regulacje. Ochrona.</h2>
         <div class="secured">
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/comodo.png" alt="comodo">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/comodo.png" alt="comodo">
             </div>
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/dmca.png" alt="dmca">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/dmca.png" alt="dmca">
             </div>
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/trustpilot.png" alt="trustpilot">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/trustpilot.png" alt="trustpilot">
             </div>
         </div>
         <p>W zaledwie 3 szybkich krokach możesz otrzymać lek i receptę</p>
     </section>
-<?php elseif ($my_lang == 'sv') : ?>
+<?php /*elseif ($my_lang == 'sv') : */?>
     <div class="container cta__back">
         <div class="cta">
             <div class="cta__text">
@@ -100,25 +113,25 @@
                 <p>Nu behöver du inte längre lämna ditt hem för att få en medicinsk konsultation. Vår online-läkarmottagning erbjuder män och kvinnor ett snabbare och enklare sätt att få behandling för vanliga tillstånd. Svara bara på ett kort frågeformulär för att få ett recept online från en licensierad läkare 24/7. Inget mer slöseri med pendling. Inga fler obekväma läkarbesök.</p>
                 <a href="javascript:void(0);" class="cta__btn btn">Starta online läkarkonsultation</a>
             </div>
-            <img src="<?php bloginfo('template_url'); ?>/img/cta-how-back.png" alt="man" class="cta__img">
+            <img src="<?php /*bloginfo('template_url'); */?>/img/cta-how-back.png" alt="man" class="cta__img">
         </div>
     </div>
     <section class="container-section text-center">
         <h2>Säker. Reglerad. Säkrad</h2>
         <div class="secured">
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/comodo.png" alt="comodo">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/comodo.png" alt="comodo">
             </div>
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/dmca.png" alt="dmca">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/dmca.png" alt="dmca">
             </div>
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/trustpilot.png" alt="trustpilot">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/trustpilot.png" alt="trustpilot">
             </div>
         </div>
         <p>Med bara tre snabba steg kan du få din behandling och recept på väg till dig</p>
     </section>
-<?php elseif ($my_lang == 'da') : ?>
+<?php /*elseif ($my_lang == 'da') : */?>
     <div class="container cta__back">
         <div class="cta">
             <div class="cta__text">
@@ -126,25 +139,25 @@
                 <p>Nu behøver du ikke længere at forlade dit hjem for at få en lægehjælp. Vores online lægeklinik tilbyder mænd og kvinder en hurtigere og lettere måde at få behandling under almindelige tilstande. Du skal blot besvare et kort spørgeskema for at få en online recept fra en autoriseret læge 24/7. Ikke mere spild af tid på pendling. Ikke flere ubehagelige lægebesøg.</p>
                 <a href="javascript:void(0);" class="cta__btn btn">Start online lægehøring</a>
             </div>
-            <img src="<?php bloginfo('template_url'); ?>/img/cta-how-back.png" alt="man" class="cta__img">
+            <img src="<?php /*bloginfo('template_url'); */?>/img/cta-how-back.png" alt="man" class="cta__img">
         </div>
     </div>
     <section class="container-section text-center">
         <h2>Sikker. Reguleret. Sikret</h2>
         <div class="secured">
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/comodo.png" alt="comodo">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/comodo.png" alt="comodo">
             </div>
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/dmca.png" alt="dmca">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/dmca.png" alt="dmca">
             </div>
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/trustpilot.png" alt="trustpilot">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/trustpilot.png" alt="trustpilot">
             </div>
         </div>
         <p>På kun 3 hurtige trin kan du få din behandling og recept på vej til dig</p>
     </section>
-<?php elseif ($my_lang == 'pt') : ?>
+<?php /*elseif ($my_lang == 'pt') : */?>
     <div class="container cta__back">
         <div class="cta">
             <div class="cta__text">
@@ -152,25 +165,25 @@
                 <p>Agora você não precisa mais sair de casa para fazer uma consulta médica. Nossa clínica médica online oferece a homens e mulheres uma maneira mais rápida e fácil de obter tratamento para condições comuns. Basta responder a um pequeno questionário para obter uma receita online de um médico licenciado, 24 horas por dia, 7 dias por semana. Não perca mais tempo com o deslocamento. Não há mais visitas ao médico desconfortáveis.</p>
                 <a href="javascript:void(0);" class="cta__btn btn">Iniciar Consulta Médica Online</a>
             </div>
-            <img src="<?php bloginfo('template_url'); ?>/img/cta-how-back.png" alt="man" class="cta__img">
+            <img src="<?php /*bloginfo('template_url'); */?>/img/cta-how-back.png" alt="man" class="cta__img">
         </div>
     </div>
     <section class="container-section text-center">
         <h2>Seguro. Regulamentado. Garantido</h2>
         <div class="secured">
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/comodo.png" alt="comodo">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/comodo.png" alt="comodo">
             </div>
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/dmca.png" alt="dmca">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/dmca.png" alt="dmca">
             </div>
             <div>
-                <img src="<?php bloginfo('template_url'); ?>/img/trustpilot.png" alt="trustpilot">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/trustpilot.png" alt="trustpilot">
             </div>
         </div>
         <p>Em apenas 3 passos rápidos você pode ter seu tratamento e prescrição a caminho de você</p>
     </section>
-<?php endif; ?>
+--><?php /*endif; */?>
 <?php get_template_part('includes/inc', 'started-now-block'); ?>
 
 <?php get_footer(); ?>

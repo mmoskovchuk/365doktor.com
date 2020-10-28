@@ -128,7 +128,7 @@
 
     </section>
 
-    <section class="container">
+    <section class="container full_page_1">
         <div class="toggle-block">
             <h2 class="toggle-block-title"><?php the_field('full_page_title_1'); ?></h2>
             <div class="toggle-block-text">
