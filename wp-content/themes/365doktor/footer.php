@@ -192,7 +192,7 @@
                          serviço de prescrição</span>
             <?php endif; ?>
 
-            <img src="<?php bloginfo('template_url'); ?>/img/verify.png" alt="">
+            <!--<img src="<?php /*bloginfo('template_url'); */?>/img/verify.png" alt="">-->
         </div>
     </footer>
 </div>
